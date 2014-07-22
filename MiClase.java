@@ -1,5 +1,6 @@
 
 public class MiClase {
+	//TRABAJO EN GRUPO CON KEVIN LANZA
 	int x;
 	MiClase(int x)
 	{
