@@ -1,5 +1,6 @@
 public class Ejercicios
 {
+	//TRABAJO EN GRUPO CON KEVIN LANZA
 	//devuelve true si "numero" es par y false de lo contrario
 	static boolean esPar(int numero)
 	{
@@ -14,6 +15,7 @@ public class Ejercicios
 	//devuelve "paquetote" si lempiras es menor que 200
 	//de lo contrario devuelve paqueton
 	//nota: solo aceptan minusculas
+	// utilizamos el if para hacer comparaciones y comparamos los valores propuestos
 	static String churches(int lempiras)
 	{
 		if (lempiras<50)
@@ -27,6 +29,8 @@ public class Ejercicios
 	}
 	
 	//devuelve el factorial de "num"
+	// Primero evaluamos el numero si es igual a cero sera igual a 1 luego si no lo es aplicamos la formula
+	//para obtener el valor de real de la operacion ya multiplicado por el factorial
 	static int factorial(int num)
 	{
 		if(num == 0) 
@@ -36,6 +40,7 @@ public class Ejercicios
 		}
 	
 	//devuelve el elemento de "arr" en la posicion "pos"
+	//solo tenemos que definirle al arreglo la variable posicion para poder ubicarla a nuestro gusto o del usuario
 	static int getElemento(int arr[],int pos)
 	{
 		
@@ -43,12 +48,14 @@ public class Ejercicios
 	}
 	
 	//devuelve el elemento de "arr" en la posicion ["col"] ["fila"]
+	//a nuestro arreglo le colocamos posiciones que serian las variables fila y columna
 	static int getElemento(int arr[][],int col,int fila)
 	{
 		return arr[col][fila];
 	}
 	
 	//devuelve el atributo "x" de "MiClase"
+	//solo tenemos que llamar el valor x de el otro programa a este programa
 	static int getX(MiClase mi_clase)
 	{
 		return mi_clase.x;
@@ -56,6 +63,7 @@ public class Ejercicios
 	
 	//implementar la funcion "getXPor2()" descrita en la clase "MiClase"
 	//No modificar esta funcion
+	//Llamamos la funcion que realizamos en el programa MI CLASE y la mostramos
 	static int implementarGetXPor2(MiClase mi_clase)
 	{
 		return mi_clase.getXPor2();
@@ -63,6 +71,7 @@ public class Ejercicios
 	
 	//implementar la funcion "getXPor2()" descrita en la clase "MiClase"
 	//No modificar esta funcion
+	//De igual manera llamamos la funcion de nuestro programa mi clase y le asignamos el valor "y"
 	static int implementarGetXMasY(MiClase mi_clase, int y)
 	{
 		return mi_clase.getXMasY(y);
@@ -70,6 +79,9 @@ public class Ejercicios
 	
 	//devuelve la funcion fibonacci de "num"
 	//nota: puedes consultar la funcion en http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
+	// Evaluamos primero la variable num si el numero es igual a 1 muestra el valor 1, de igual manera si el
+	//numero es igual a 0 regresamos 0, en caso contrario regresa la formula fibonacci que el num-1 se le
+	//suma el num -2
 	static int fibonacci(int num)
 	{
 		 if(num==1)
@@ -83,6 +95,8 @@ public class Ejercicios
 	//realizar la siguiente funcion recursiva:
 	//funcionRecursiva(n) = funcionRecursiva(n-1)*2+1
 	//donde: funcionRecursiva(0) = 0 y funcionRecursiva(1) = 2
+	//Evaluamos que si el num es igual a 0, regresa el valor 0; si el num es igual a 1 regresa 2
+	//si no se cumple esto entra a la formula que el num-1 lo multiplica por 2+1 
 	static int funcionRecursiva(int num)
 	{
 		if(num==0)
